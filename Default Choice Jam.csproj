@@ -315,6 +315,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerLighter.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Torch\TorchIsLit.cs" />
+    <Compile Include="Assets\Scripts\TorchBurnout.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />

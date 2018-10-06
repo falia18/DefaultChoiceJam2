@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class TorchIsLit : MonoBehaviour {
 
-    public GameObject player;
-    public GameObject light;
+    public GameObject torchLight;
     private bool isLighting;
 
     // Get the light variable from the player (prende la lumiere variables de le joueur)
     void getLight()
     {
-        isLighting = player.GetComponent<PlayerLighter>().isLighting;
+        isLighting = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerLighter>().isLighting;
     }
 
     void Update () {
@@ -26,7 +25,7 @@ public class TorchIsLit : MonoBehaviour {
             if(isLighting == true)
             {
                 // Make the light of the torch appear (fais la lumiere de la lampe apparaitre)
-                light.SetActive(true);
+                torchLight.SetActive(true);
             }
         }
     }
